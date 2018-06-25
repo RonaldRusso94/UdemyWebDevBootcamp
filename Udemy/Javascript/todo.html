@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo List</title>
+	<script type="text/javascript">
+			
+		var todos = [];
+		var input = prompt("What would you like to do?");
+
+		// for(i=0; i < 5; i = i + 1)
+		while (input !== "quit"){
+
+			if(input === "new"){
+				addTodo();
+			}
+			else if(input == "list"){
+				listTodos();
+			}
+			else if(input == "delete"){
+				deleteTodo();
+			}
+			input = prompt("What would you like to do?")
+
+		}
+		console.log("OK, YOU QUIT THE APP");
+
+		function listTodos(){
+			console.log("**********");
+			todos.forEach(function(todo, i){
+				console.log(i + ": " + todo);
+			});
+			console.log("**********");
+		}
+
+		function addTodo(){
+			var answer = prompt("What would you like to add to your list?");
+			todos.push(answer);
+			console.log("Added Todo");
+		}
+
+		function deleteTodo(){
+			var index = prompt("Enter index of todo to delete");
+			todos.splice(index, 1);
+			console.log("Deleted Todo" + );
+		}
+
+
+	</script>
+</head>
+<body>
+
+	<h1>Todo List</h1>
+	<ul>
+		<li>"new" - Add A Todo</li>
+		<li>"list" - View All Todos</li>
+		<li>"delete" - Remove A Specific Todo</li>
+		<li>"quit" Quit App</li>
+	</ul>
+
+</body>
+</html>
