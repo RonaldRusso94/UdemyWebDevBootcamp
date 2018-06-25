@@ -1,0 +1,16 @@
+li{
+	border:2px solid red;
+}
+
+#special{
+	background: yellow;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+li:nth-of-type(odd){
+	color:purple;
+}
+
