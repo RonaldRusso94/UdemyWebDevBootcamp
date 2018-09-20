@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Demo</title>
+
+	<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+	<div>Div 1</div>
+	<div class="highlight">Div 2</div>
+	<div id="third">Div 3</div>
+	<div class="highlight">Div 4</div>
+
+
+	<script type="text/javascript">
+		$("div").css("background", "purple")
+		$(".highlight").css("width", "200px")
+		$("#third").css("border", "solid 2px orange")
+		$("div:first").css("color", "pink" )
+	</script>
+</body>
+</html>
